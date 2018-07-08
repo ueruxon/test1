@@ -1,0 +1,113 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #e7f0f7;
+    height: 45px;
+}
+
+tbody {
+    background: #ffffff;
+    height: 400px;
+    width: 100%;
+    overflow-x: auto;
+    position: absolute;
+}
+
+table tr {
+    width: 100%;
+    display: inline-table;
+    table-layout: fixed;
+}
+
+.tableHeadTh {
+    padding: 13px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 14px;
+    text-align: start;
+    color: #3a3e49;
+}
+.tableHeadTh:last-child {
+    text-align: center !important;
+}
+
+.trItem th {
+    padding: 8px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 14px;
+    text-align: start;
+    color: #3a3e49;
+}
+.trItem th:last-child {
+    text-align: center !important;
+}
+
+/* ------------ CHECKBOX -------------- */
+
+.labelWrap {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+}
+
+.labelWrap input {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 7px;
+    height: 15px;
+    width: 15px;
+    border-radius: 2px;
+    background-color: #eee;
+}
+.checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.labelWrap:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.labelWrap input:checked ~ .checkmark {
+    background-color: #009ad6;
+}
+
+/* ------------ END  CHECKBOX -------------- */
+
+.btn {
+    width: 62px;
+    height: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    background: #009ad6;
+    border-radius: 19px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 14px;
+}
+.btn:hover {
+    background: #006b96;
+}

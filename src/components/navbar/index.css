@@ -1,0 +1,41 @@
+.container {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-content: center;
+    min-height: 30px;
+}
+
+.containerLeft {
+    display: flex;
+    flex: 2 1 300px;
+}
+
+.containerRight {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+    margin-right: 30px;
+    padding-bottom: 6px;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 14px;
+    color: #8A9AAB;
+}
+.btn:hover {
+    border-bottom: 1px solid #009AD6;
+    color: #3a3e49;
+}
+
+.btn.active {
+    border-bottom: 1px solid #009AD6;
+    color: #3a3e49;
+}
